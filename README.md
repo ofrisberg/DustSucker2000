@@ -34,9 +34,6 @@ The original position of the cleaner is at 3 m from left
 and 2 m from bottom corner that the cleaner can fit in.
 Resulting position: N 3 1.
 
-### Output
-
-
 ## To do
 Due to time limitation there is still some work to do on the simulator:
 - Implement exceptions for all classes
