@@ -10,20 +10,20 @@ All lengths are measured in meters and the angle is defined as
 in the unit circle (i.e. 0 degrees is east, 90 degrees is north etc).
 
 ### Input format
-Line 0: Lx Ly (The dimensions of the room
-Line 1: wsymb x y (The initial conditions of the DustSucker2000
-Line 2: commands (The commands to execute in serial)
+- Line 0: Lx Ly (The dimensions of the room
+- Line 1: wsymb x y (The initial conditions of the DustSucker2000
+- Line 2: commands (The commands to execute in serial)
 
 ### Supported commands
-A: Move forward 1 meter
-L: Turn left 90 degrees
-R: Turn right 90 degrees
+- A: Move forward 1 meter
+- L: Turn left 90 degrees
+- R: Turn right 90 degrees
 
 ## Example
-### test.txt
-`6 7
-N 3 2
-RARAARARA`
+### Input
+- Line 0: 6 7
+- Line 1: N 3 2
+- Line 2: RARAARARA
 
 ### Terminal command
 `cat test.txt | python src/main.py`
@@ -32,6 +32,10 @@ RARAARARA`
 Creates a room with a width of 6 m and height of 7 m. 
 The original position of the cleaner is at 3 m from left
 and 2 m from bottom corner that the cleaner can fit in.
+Resulting position: N 3 1.
+
+### Output
+
 
 ## To do
 Due to time limitation there is still some work to do on the simulator:
